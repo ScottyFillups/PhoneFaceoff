@@ -1,0 +1,159 @@
+/* Date created: 2016-05-15 */
+/* Date updated: 2016-05-15 */
+/* Creator: Philip Scott */
+/* File name: style_main.php */
+/* Purpose: Main styling for the home page and browse page */
+/* Note: #61E9BE is the hex for the turquoise color, #646464 is the gray font default color, and #E9618C is the hex for the pink */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+	color: #242424;
+	font-family: Open Sans, Arial, Sans-serif;
+}
+a {
+	color: #009BFF;
+	
+	text-decoration: none;
+}
+a:hover {
+	color: #0079FF;
+}
+
+body.phone {
+	color: #646464;
+}
+h1.astronomical {
+	margin: 0;
+	
+	font-size: 404px;
+	line-height: 120%;
+}
+.container {
+	width: auto;
+	max-width: 900px;
+}
+.container-fluid {
+	padding-top: 25px;
+}
+.child-center {
+	text-align: center;
+}
+.elem-center {
+	margin: 0 auto;
+}
+h1.pink, p.pink, span.pink {
+	color: #E9618C;
+}
+h1.title {
+	font-size: 35px;
+	font-weight: bold;
+}
+.button-search {
+	margin: 30px 0 60px;
+	font-size: 100px;
+	padding: 40px;
+	border: 3px solid #E9618C;
+	border-radius: 50%;
+	cursor: pointer;
+	color: #646464;
+	transition: border-color 0.5s ease;
+}
+.button-search:hover {
+	border-color: #61E9BE;
+}
+.button-search:hover, .button-search:visited, .button-search:active, .button-search:link {
+	color: #646464;				/*Overrides the <a> hover*/
+	text-decoration: none;
+}
+
+
+.phone-container {
+	width: 100%;
+	max-width: 300px;
+	height: auto;
+	margin: 0 auto;
+}
+.phone-input-field {
+	width: inherit;
+	height: 32px;
+	border: 0;
+	border-bottom: 4px solid #E9618C;
+	margin: 30px 0 40px;
+	font-size: 14px;
+	padding: 2px 6px;
+	
+	transition: border-bottom-color 0.5s ease;
+}
+.phone-input-field:focus {
+	outline: none;			/*Fix for blue border for input boxes Chrome*/
+	border-bottom-color: #61E9BE;
+}
+div.phone-container img {
+	max-height: 500px;
+}
+
+
+table {
+	width: 100%;
+	vertical-align: middle;
+}
+#phone-table {
+	display: none;
+}
+footer {
+	margin-top: 50px;
+}
+
+th {
+	background-color: #E9618C;
+	border: 2px solid #E9618C;
+	border-right: 0;
+	color: white;
+	text-align: center;
+	padding: 4px 4px 4px 10px;
+	font-size: 18px;
+	margin-bottom: 50px;
+	height: 36px;
+}
+#phone-table-mobile th {
+	padding: 4px;
+}
+#phone-table-mobile th:nth-child(2) {
+	font-size: 14px;
+}
+
+td {
+	border: 1px solid rgb(221, 221, 221);
+	font-size: 12px;
+	
+	padding: 2px 10px;
+	
+	width: 44%;
+	text-align: center;
+	line-height: 200%;
+}
+#phone-table-desktop td, #phone-table-desktop th {
+	width: 29.33333%;		/*(100 - 12) / 3 * 100%*/
+}
+#phone-table-desktop th:nth-child(1) {
+	width: 12%;
+	font-size: 14px;
+	text-align: left;
+}
+
+#phone-table-mobile td:nth-child(2), #phone-table-desktop td:first-child {
+	color: #E9618C;
+	width: 12%;
+	text-align: center;
+	padding: 4px;
+}
+
+th.title {
+	padding: 10px;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
+
+
+
