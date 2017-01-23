@@ -1,0 +1,12 @@
+# ---- 1. Prevent directory file listing in all of your folders ----
+# ---- 	  IndexIgnore * also works too, but doesn't throw a 403 error ----
+
+Options -Indexes
+
+# ---- 2. Establish a custom 404 File not Found page ----
+
+ErrorDocument 404 /error_404.html
+
+# ---- 3. Establish a custom 404 forbidden page ----
+
+ErrorDocument 403 /error_403.html
