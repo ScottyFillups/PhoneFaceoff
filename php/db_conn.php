@@ -7,9 +7,9 @@
 	 */
 	
 	$servername = "localhost";
-	$username = "phone_ADMIN";
-	$password = "d1s4rr4y1s4v1rus";
-	$dbname = "phone_db";
+	$username = "some_username";
+	$password = "some_password";
+	$dbname = "some_dbname";
 
 	// Create connection
 	$conn = new mysqli($servername, $username, $password, $dbname);
