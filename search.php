@@ -18,7 +18,7 @@
 			</div>
 		
 			<div class="container">
-				<?php require_once("/home/phone/public_html/php/display_all.php"); ?>
+				<?php require_once("./php/display_all.php"); ?>
 			</div>
 		</div>
 		

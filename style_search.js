@@ -15,7 +15,7 @@ $(document).ready( function() {
 		}, 
 		function(data) {
 			localStorage.setItem('search', data);
-			window.location.href = "http://www.phonefaceoff.io/";
+			window.location.href = "../";
 		});
 	});
 });

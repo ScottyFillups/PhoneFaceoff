@@ -10,11 +10,8 @@
 	 * @echo 						table for desktop with data retrieved from database
 	 */
 	
-	//require_once("/php/db_conn.php");
-	//require_once("/php/select_phone.php");
-	
-	require_once("/home/phone/public_html/php/db_conn.php");
-	require_once("/home/phone/public_html/php/select_phone.php");
+	require_once("./php/db_conn.php");
+	require_once("./php/select_phone.php");
 	
 	$search1 = $_REQUEST['search1'];
 	$search2 = $_REQUEST['search2'];
@@ -44,7 +41,6 @@
 				<td>" . $row2["2g_bands"] . "</td>
 				<td>" . $row3["2g_bands"] . "</td>
 			</tr>
-			<tr>
 				<td>3G Network</td>
 				<td>" . $row1["3g_net"] . "</td>
 				<td>" . $row2["3g_net"] . "</td>
